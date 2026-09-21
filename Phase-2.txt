@@ -1,0 +1,12 @@
+Task 1: Reverse Linked List
+Task 2: Two Sum
+Task 3: Valid Parentheses
+Task 4: Binary Search
+Task 5: Merge Intervals
+Task 6: Longest Substring Without Repeating Characters
+Task 7: Detect Cycle in Linked List
+Task 8: Top K Frequent Elements
+Task 9: Number of Islands
+Task 10: Dijkstra’s Shortest Path
+Task 11: JWT Authentication
+Task 12: BFS Graph Traversal
