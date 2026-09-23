@@ -1,0 +1,206 @@
+{
+  "Human": {
+    "task11_jwt_auth.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    },
+    "task12_bfs.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "assert_used"
+      ]
+    }
+  },
+  "claude_code__original": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "claude_code__typo": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "claude_code__synonym": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "claude_code__paraphrase": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "chatgpt_code__original": {},
+  "chatgpt_code__typo": {},
+  "chatgpt_code__synonym": {},
+  "chatgpt_code__paraphrase": {},
+  "gemini__original": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "gemini__typo": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "gemini__synonym": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "gemini__paraphrase": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "github_copilot__original": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "github_copilot__typo": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "github_copilot__synonym": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "github_copilot__paraphrase": {
+    "task11.py": {
+      "count": 1,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "types": [
+        "hardcoded_password_string"
+      ]
+    }
+  },
+  "perplexity__original": {
+    "task11.py": {
+      "count": 2,
+      "high": 0,
+      "medium": 0,
+      "low": 2,
+      "types": [
+        "hardcoded_password_default",
+        "hardcoded_password_default"
+      ]
+    }
+  },
+  "perplexity__typo": {
+    "task11.py": {
+      "count": 2,
+      "high": 0,
+      "medium": 0,
+      "low": 2,
+      "types": [
+        "hardcoded_password_default",
+        "hardcoded_password_default"
+      ]
+    }
+  },
+  "perplexity__synonym": {
+    "task11.py": {
+      "count": 2,
+      "high": 0,
+      "medium": 0,
+      "low": 2,
+      "types": [
+        "hardcoded_password_default",
+        "hardcoded_password_default"
+      ]
+    }
+  },
+  "perplexity__paraphrase": {
+    "task11.py": {
+      "count": 2,
+      "high": 0,
+      "medium": 0,
+      "low": 2,
+      "types": [
+        "hardcoded_password_default",
+        "hardcoded_password_default"
+      ]
+    }
+  }
+}
