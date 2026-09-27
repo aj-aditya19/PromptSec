@@ -1,0 +1,49 @@
+task,variant,total_samples,bare_except,hardcoded,no_handling,bare_except_pct
+Reverse Linked List,original,0,0,0,0,0.0
+Reverse Linked List,typo,0,0,0,0,0.0
+Reverse Linked List,synonym,0,0,0,0,0.0
+Reverse Linked List,paraphrase,0,0,0,0,0.0
+Two Sum,original,0,0,0,0,0.0
+Two Sum,typo,0,0,0,0,0.0
+Two Sum,synonym,0,0,0,0,0.0
+Two Sum,paraphrase,0,0,0,0,0.0
+Valid Parentheses,original,0,0,0,0,0.0
+Valid Parentheses,typo,0,0,0,0,0.0
+Valid Parentheses,synonym,0,0,0,0,0.0
+Valid Parentheses,paraphrase,0,0,0,0,0.0
+Binary Search,original,0,0,0,0,0.0
+Binary Search,typo,0,0,0,0,0.0
+Binary Search,synonym,0,0,0,0,0.0
+Binary Search,paraphrase,0,0,0,0,0.0
+Merge Intervals,original,0,0,0,0,0.0
+Merge Intervals,typo,0,0,0,0,0.0
+Merge Intervals,synonym,0,0,0,0,0.0
+Merge Intervals,paraphrase,0,0,0,0,0.0
+Longest Substring Without Repeating Characters,original,0,0,0,0,0.0
+Longest Substring Without Repeating Characters,typo,0,0,0,0,0.0
+Longest Substring Without Repeating Characters,synonym,0,0,0,0,0.0
+Longest Substring Without Repeating Characters,paraphrase,0,0,0,0,0.0
+Detect Cycle in Linked List,original,0,0,0,0,0.0
+Detect Cycle in Linked List,typo,0,0,0,0,0.0
+Detect Cycle in Linked List,synonym,0,0,0,0,0.0
+Detect Cycle in Linked List,paraphrase,0,0,0,0,0.0
+Top K Frequent Elements,original,0,0,0,0,0.0
+Top K Frequent Elements,typo,0,0,0,0,0.0
+Top K Frequent Elements,synonym,0,0,0,0,0.0
+Top K Frequent Elements,paraphrase,0,0,0,0,0.0
+Number of Islands,original,0,0,0,0,0.0
+Number of Islands,typo,0,0,0,0,0.0
+Number of Islands,synonym,0,0,0,0,0.0
+Number of Islands,paraphrase,0,0,0,0,0.0
+Dijkstra's Shortest Path,original,0,0,0,0,0.0
+Dijkstra's Shortest Path,typo,0,0,0,0,0.0
+Dijkstra's Shortest Path,synonym,0,0,0,0,0.0
+Dijkstra's Shortest Path,paraphrase,0,0,0,0,0.0
+JWT Authentication,original,0,0,0,0,0.0
+JWT Authentication,typo,0,0,0,0,0.0
+JWT Authentication,synonym,0,0,0,0,0.0
+JWT Authentication,paraphrase,0,0,0,0,0.0
+BFS Graph Traversal,original,0,0,0,0,0.0
+BFS Graph Traversal,typo,0,0,0,0,0.0
+BFS Graph Traversal,synonym,0,0,0,0,0.0
+BFS Graph Traversal,paraphrase,0,0,0,0,0.0

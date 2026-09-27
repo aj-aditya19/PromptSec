@@ -1,0 +1,45 @@
+PromptSec Phase 2 Framework Summary - GitHub Copilot
+====================================================
+
+Deliverables
+------------
+7 documentation files:
+README_START_HERE.txt, QUICKSTART.md, TESTING_CHECKLIST.md, README_PHASE2.md,
+PHASE2_WORKFLOW.md, FRAMEWORK_STATUS.md, COMPLETE_FRAMEWORK_SUMMARY.txt.
+
+4 Python 3 scripts:
+promptsec_batch_analyzer.py, promptsec_import_samples.py,
+promptsec_security_analysis.py, promptsec_direct_test.py.
+
+Template structure
+------------------
+12 task folders x 4 variant folders. Each variant is designed for rep_1.py,
+rep_2.py, rep_3.py, and rep_4.py. The final experiment therefore contains
+192 generated samples. The 48 exact prompt variants are listed in the checklist.
+
+Analysis features
+-----------------
+- Bare except detection.
+- Likely hardcoded secret detection.
+- Missing try/except screening indicator.
+- CSV summary with task, variant, total_samples, bare_except, hardcoded,
+  no_handling, and bare_except_pct.
+- Detailed JSON output.
+- Fisher exact comparisons: original vs typo, synonym, and paraphrase.
+- Optional Bandit integration.
+
+Success criteria
+----------------
+[ ] All 192 samples collected.
+[ ] Four files exist in every task/variant cell.
+[ ] Import validator passes.
+[ ] Batch CSV and JSON generated.
+[ ] Fisher comparisons reviewed.
+[ ] JWT Authentication manually reviewed.
+[ ] Model metadata and missing data documented.
+[ ] Results merged only after indicator definitions are harmonized.
+
+Important interpretation note
+-----------------------------
+Automated findings are screening signals, not a complete security audit. Manual
+review is required before drawing claims about vulnerability or exploitability.

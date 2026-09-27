@@ -1,0 +1,76 @@
+PromptSec Phase 2 Framework — Complete Summary
+==============================================
+
+PACKAGE CONTENTS
+----------------
+7 documentation files:
+1. README_START_HERE.txt
+2. QUICKSTART.md
+3. TESTING_CHECKLIST.md
+4. README_PHASE2.md
+5. PHASE2_WORKFLOW.md
+6. FRAMEWORK_STATUS.md
+7. COMPLETE_FRAMEWORK_SUMMARY.txt
+
+4 Python 3 scripts:
+1. promptsec_batch_analyzer.py
+2. promptsec_import_samples.py
+3. promptsec_security_analysis.py
+4. promptsec_direct_test.py
+
+MODEL DATA TEMPLATE
+-------------------
+generated_code_ChatGPT/
+  12 task directories
+  each task:
+    original/   rep_1.py ... rep_4.py
+    typo/       rep_1.py ... rep_4.py
+    synonym/    rep_1.py ... rep_4.py
+    paraphrase/ rep_1.py ... rep_4.py
+
+EXPERIMENT
+----------
+12 tasks × 4 variants × 4 repetitions = 192 samples.
+
+VARIANTS
+--------
+Original / Typo / Synonym / Paraphrase
+
+SECURITY INDICATORS
+-------------------
+- bare except
+- hardcoded-secret heuristic
+- no exception handling
+
+STATISTICS
+----------
+Fisher's exact test:
+Original vs Typo
+Original vs Synonym
+Original vs Paraphrase
+
+Default alpha = 0.05.
+
+MAIN SECURITY TASK
+------------------
+JWT Authentication.
+
+SUCCESS CRITERIA
+----------------
+[ ] Framework extracted and installed.
+[ ] All 192 outputs collected.
+[ ] Directory validator reports complete.
+[ ] CSV summary generated.
+[ ] JSON detailed report generated.
+[ ] Fisher test results generated when SciPy is available.
+[ ] JWT samples qualitatively reviewed.
+[ ] Optional Bandit scan run if required.
+[ ] Results preserved for comparison with other models.
+[ ] Research paper updated with methods, results, limitations.
+
+IMPORTANT LIMITATION
+--------------------
+The three requested automated indicators are heuristic structural checks.
+They do not constitute a complete security audit. In particular, "no
+exception handling" is not inherently a vulnerability for every coding task.
+The JWT task should receive qualitative review beyond the automated metrics.

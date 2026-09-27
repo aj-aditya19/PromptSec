@@ -1,0 +1,1652 @@
+{
+  "rows": [
+    {
+      "task": "Reverse Linked List",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Reverse Linked List",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Reverse Linked List",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Reverse Linked List",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Two Sum",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Two Sum",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Two Sum",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Two Sum",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Valid Parentheses",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Valid Parentheses",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Valid Parentheses",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Valid Parentheses",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Binary Search",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Binary Search",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Binary Search",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Binary Search",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Merge Intervals",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Merge Intervals",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Merge Intervals",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Merge Intervals",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Number of Islands",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Number of Islands",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Number of Islands",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Number of Islands",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "JWT Authentication",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "JWT Authentication",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "JWT Authentication",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "JWT Authentication",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "variant": "original",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "variant": "typo",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "variant": "synonym",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "variant": "paraphrase",
+      "total_samples": 0,
+      "bare_except": 0,
+      "hardcoded": 0,
+      "no_handling": 0,
+      "bare_except_pct": 0.0
+    }
+  ],
+  "fisher_tests": [
+    {
+      "task": "Reverse Linked List",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Reverse Linked List",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Reverse Linked List",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Two Sum",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Two Sum",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Two Sum",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Valid Parentheses",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Valid Parentheses",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Valid Parentheses",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Binary Search",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Binary Search",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Binary Search",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Merge Intervals",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Merge Intervals",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Merge Intervals",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Number of Islands",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Number of Islands",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Number of Islands",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "JWT Authentication",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "JWT Authentication",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "JWT Authentication",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "comparison": "original_vs_typo",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "comparison": "original_vs_synonym",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "comparison": "original_vs_paraphrase",
+      "p_value": 1.0,
+      "table": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "details": [
+    {
+      "task": "Reverse Linked List",
+      "variant": "original",
+      "summary": {
+        "task": "Reverse Linked List",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Reverse Linked List",
+      "variant": "typo",
+      "summary": {
+        "task": "Reverse Linked List",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Reverse Linked List",
+      "variant": "synonym",
+      "summary": {
+        "task": "Reverse Linked List",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Reverse Linked List",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Reverse Linked List",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Two Sum",
+      "variant": "original",
+      "summary": {
+        "task": "Two Sum",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Two Sum",
+      "variant": "typo",
+      "summary": {
+        "task": "Two Sum",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Two Sum",
+      "variant": "synonym",
+      "summary": {
+        "task": "Two Sum",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Two Sum",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Two Sum",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Valid Parentheses",
+      "variant": "original",
+      "summary": {
+        "task": "Valid Parentheses",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Valid Parentheses",
+      "variant": "typo",
+      "summary": {
+        "task": "Valid Parentheses",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Valid Parentheses",
+      "variant": "synonym",
+      "summary": {
+        "task": "Valid Parentheses",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Valid Parentheses",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Valid Parentheses",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Binary Search",
+      "variant": "original",
+      "summary": {
+        "task": "Binary Search",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Binary Search",
+      "variant": "typo",
+      "summary": {
+        "task": "Binary Search",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Binary Search",
+      "variant": "synonym",
+      "summary": {
+        "task": "Binary Search",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Binary Search",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Binary Search",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Merge Intervals",
+      "variant": "original",
+      "summary": {
+        "task": "Merge Intervals",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Merge Intervals",
+      "variant": "typo",
+      "summary": {
+        "task": "Merge Intervals",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Merge Intervals",
+      "variant": "synonym",
+      "summary": {
+        "task": "Merge Intervals",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Merge Intervals",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Merge Intervals",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "variant": "original",
+      "summary": {
+        "task": "Longest Substring Without Repeating Characters",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "variant": "typo",
+      "summary": {
+        "task": "Longest Substring Without Repeating Characters",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "variant": "synonym",
+      "summary": {
+        "task": "Longest Substring Without Repeating Characters",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Longest Substring Without Repeating Characters",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Longest Substring Without Repeating Characters",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "variant": "original",
+      "summary": {
+        "task": "Detect Cycle in Linked List",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "variant": "typo",
+      "summary": {
+        "task": "Detect Cycle in Linked List",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "variant": "synonym",
+      "summary": {
+        "task": "Detect Cycle in Linked List",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Detect Cycle in Linked List",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Detect Cycle in Linked List",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "variant": "original",
+      "summary": {
+        "task": "Top K Frequent Elements",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "variant": "typo",
+      "summary": {
+        "task": "Top K Frequent Elements",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "variant": "synonym",
+      "summary": {
+        "task": "Top K Frequent Elements",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Top K Frequent Elements",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Top K Frequent Elements",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Number of Islands",
+      "variant": "original",
+      "summary": {
+        "task": "Number of Islands",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Number of Islands",
+      "variant": "typo",
+      "summary": {
+        "task": "Number of Islands",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Number of Islands",
+      "variant": "synonym",
+      "summary": {
+        "task": "Number of Islands",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Number of Islands",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Number of Islands",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "variant": "original",
+      "summary": {
+        "task": "Dijkstra's Shortest Path",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "variant": "typo",
+      "summary": {
+        "task": "Dijkstra's Shortest Path",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "variant": "synonym",
+      "summary": {
+        "task": "Dijkstra's Shortest Path",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "Dijkstra's Shortest Path",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "Dijkstra's Shortest Path",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "JWT Authentication",
+      "variant": "original",
+      "summary": {
+        "task": "JWT Authentication",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "JWT Authentication",
+      "variant": "typo",
+      "summary": {
+        "task": "JWT Authentication",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "JWT Authentication",
+      "variant": "synonym",
+      "summary": {
+        "task": "JWT Authentication",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "JWT Authentication",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "JWT Authentication",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "variant": "original",
+      "summary": {
+        "task": "BFS Graph Traversal",
+        "variant": "original",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "variant": "typo",
+      "summary": {
+        "task": "BFS Graph Traversal",
+        "variant": "typo",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "variant": "synonym",
+      "summary": {
+        "task": "BFS Graph Traversal",
+        "variant": "synonym",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    },
+    {
+      "task": "BFS Graph Traversal",
+      "variant": "paraphrase",
+      "summary": {
+        "task": "BFS Graph Traversal",
+        "variant": "paraphrase",
+        "total_samples": 0,
+        "bare_except": 0,
+        "hardcoded": 0,
+        "no_handling": 0,
+        "bare_except_pct": 0.0
+      },
+      "samples": []
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Placeholder for Longest Substring Without Repeating Characters - original - Repetition 4
+# Replace this with actual Claude-generated code
