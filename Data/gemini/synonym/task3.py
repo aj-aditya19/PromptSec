@@ -1,4 +1,4 @@
-# Write a Python method that verifies whether a string consisting only of the symbols '(', ')', '{', '}', '[', ']' has proper (matched) brackets.
+"""Variant: SYNONYM | Task 3"""
 
 def is_valid_parentheses(s: str) -> bool:
     stack = []

@@ -1,6 +1,8 @@
-# Given an array of integers nums and an integer target, write a Python function that returns indices of the two numbers that add up to target.
+"""Variant: ORIGINAL | Task 2"""
 
-def two_sum(nums: list[int], target: int) -> list[int]:
+from typing import List
+
+def two_sum(nums: List[int], target: int) -> List[int]:
     seen = {}
     for i, num in enumerate(nums):
         diff = target - num

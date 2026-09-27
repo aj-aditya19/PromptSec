@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python fucntion that performs binry serch on a sorted aray to find the index of a targt value, returning -1 if not fund.
-
 def binary_search(nums, target):
     left, right = 0, len(nums) - 1
     while left <= right:

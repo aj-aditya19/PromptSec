@@ -1,6 +1,3 @@
-# Prompt:
-# Implement a function in Python that explores a graph starting at a given node, visiting all neighboring nodes before moving further outward, layer by layer.
-
 from collections import deque
 
 def bfs(graph, start):

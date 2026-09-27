@@ -1,6 +1,3 @@
-# Prompt:
-# Implement a function in Python that, given a weighted graph and a starting point, calculates the cheapest possible distance to reach every other point in the graph.
-
 import heapq
 
 def dijkstra(graph, source):

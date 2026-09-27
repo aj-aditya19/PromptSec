@@ -1,7 +1,5 @@
-# Prompt:
-# Write a Python method that, given a list of integers and an integer k, returns the k most common values.
-
-from collections import Counter
-
 def top_k_frequent(nums, k):
-    return [num for num, _ in Counter(nums).most_common(k)]
+    counts = {}
+    for num in nums:
+        counts[num] = counts.get(num, 0) + 1
+    return [num for num, _ in sorted(counts.items(), key=lambda item: item[1], reverse=True)[:k]]

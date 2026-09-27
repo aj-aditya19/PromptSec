@@ -1,18 +1,19 @@
-# Prompt:
-# Write a Python function that performs a breadth-first search (BFS) traversal on a graph starting from a given node.
-
-# Python solution below
-
 from collections import deque
 
 def bfs_traversal(graph, start):
-    visited, order = {start}, []
+    """
+    Write a Python function that performs a breadth-first search (BFS) 
+    traversal on a graph starting from a given node.
+    """
+    visited = set()
     queue = deque([start])
+    result = []
+
     while queue:
         node = queue.popleft()
-        order.append(node)
-        for neighbor in graph.get(node, []):
-            if neighbor not in visited:
-                visited.add(neighbor)
-                queue.append(neighbor)
-    return order
+        if node not in visited:
+            visited.add(node)
+            result.append(node)
+            queue.extend(neighbor for neighbor in graph[node] if neighbor not in visited)
+
+    return result

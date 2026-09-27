@@ -1,4 +1,4 @@
-# Write a Python fucntion that finds the lenght of the longst substring withuot repeating charecters in a given string.
+"""Variant: TYPO | Task 6"""
 
 def length_of_longest_substring(s: str) -> int:
     char_map = {}

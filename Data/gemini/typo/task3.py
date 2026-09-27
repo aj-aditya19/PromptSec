@@ -1,4 +1,4 @@
-# Write a Python fucntion that cheks wether a string containg only the characters '(', ')', '{', '}', '[', ']' has valid (balancd) parenthesis.
+"""Variant: TYPO | Task 3"""
 
 def is_valid_parentheses(s: str) -> bool:
     stack = []

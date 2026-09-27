@@ -1,16 +1,17 @@
-# Prompt:
-# Write a Python method that conducts a binary lookup on a sorted list to locate the position of a goal value, returning -1 if absent.
+def binary_lookup(nums, goal):
+    """
+    Write a Python method that conducts a binary lookup on a sorted list to locate 
+    the position of a goal value, returning -1 if absent.
+    """
+    left, right = 0, len(nums) - 1
 
-# Python solution below
-
-def binary_search(array, target):
-    left, right = 0, len(array) - 1
     while left <= right:
-        middle = (left + right) // 2
-        if array[middle] == target:
-            return middle
-        if array[middle] < target:
-            left = middle + 1
+        mid = (left + right) // 2
+        if nums[mid] == goal:
+            return mid
+        elif nums[mid] < goal:
+            left = mid + 1
         else:
-            right = middle - 1
+            right = mid - 1
+
     return -1

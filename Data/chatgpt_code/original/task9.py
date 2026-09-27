@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python function that, given an m x n 2D binary grid representing '1's (land) and '0's (water), returns the number of islands.
-
 def num_islands(grid):
     if not grid:
         return 0

@@ -1,16 +1,23 @@
-# Prompt:
-# Write a Python fucntion that detcts wether a singly linked lst contians a cycl.
-
-# Python solution below
-
 class ListNode:
     def __init__(self, val=0, next=None):
-        self.val, self.next = val, next
+        self.val = val
+        self.next = next
 
 def has_cycle(head):
-    slow = fast = head
+    """
+    Write a Python fucntion that detcts wether a singly linked lst contians a cycl.
+    """
+    if not head or not head.next:
+        return False
+
+    slow = head
+    fast = head
+
     while fast and fast.next:
-        slow, fast = slow.next, fast.next.next
-        if slow is fast:
+        slow = slow.next
+        fast = fast.next.next
+
+        if slow == fast:
             return True
+
     return False

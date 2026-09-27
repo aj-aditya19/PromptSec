@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python method that, given a 2D matrix of '1's (ground) and '0's (sea), returns the count of separate landmasses.
-
 def num_islands(grid):
     if not grid:
         return 0

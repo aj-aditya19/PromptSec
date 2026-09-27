@@ -1,6 +1,3 @@
-# Prompt:
-# Create a function in Python that scans a 2D grid of land and water cells and counts how many separate, connected groups of land cells exist.
-
 def num_islands(grid):
     if not grid:
         return 0

@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python method that accepts a collection of ranges and combines all intersecting ranges, returning the combined collection.
-
 def merge_intervals(intervals):
     if not intervals:
         return []

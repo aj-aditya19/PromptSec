@@ -1,6 +1,8 @@
-# Write a Python function where, given a list of numbers and a target value, you find and return the indices of two elements whose total equals the target.
+"""Variant: PARAPHRASE | Task 2"""
 
-def two_sum(nums: list[int], target: int) -> list[int]:
+from typing import List
+
+def two_sum(nums: List[int], target: int) -> List[int]:
     seen = {}
     for i, num in enumerate(nums):
         diff = target - num

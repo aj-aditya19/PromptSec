@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python fucntion that implements Djikstra's algorithm to find the shrtest path from a source node to all othr nodes in a weighted graf.
-
 import heapq
 
 def dijkstra(graph, source):

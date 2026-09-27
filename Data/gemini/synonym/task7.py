@@ -1,4 +1,4 @@
-# Write a Python method that identifies whether a singly linked list has a loop.
+"""Variant: SYNONYM | Task 7"""
 
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -6,7 +6,8 @@ class ListNode:
         self.next = next
 
 def has_cycle(head: ListNode) -> bool:
-    slow, fast = head, head
+    slow = head
+    fast = head
     while fast and fast.next:
         slow = slow.next
         fast = fast.next.next

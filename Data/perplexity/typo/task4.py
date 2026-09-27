@@ -1,16 +1,17 @@
-# Prompt:
-# Write a Python fucntion that performs binry serch on a sorted aray to find the index of a targt value, returning -1 if not fund.
+def binary_search(nums, target):
+    """
+    Write a Python fucntion that performs binry serch on a sorted aray to find 
+    the index of a targt value, returning -1 if not fund.
+    """
+    left, right = 0, len(nums) - 1
 
-# Python solution below
-
-def binary_search(array, target):
-    left, right = 0, len(array) - 1
     while left <= right:
-        middle = (left + right) // 2
-        if array[middle] == target:
-            return middle
-        if array[middle] < target:
-            left = middle + 1
+        mid = (left + right) // 2
+        if nums[mid] == target:
+            return mid
+        elif nums[mid] < target:
+            left = mid + 1
         else:
-            right = middle - 1
+            right = mid - 1
+
     return -1

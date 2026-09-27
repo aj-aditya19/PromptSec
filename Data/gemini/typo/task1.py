@@ -1,4 +1,4 @@
-# Write a Python fucntion that revreses a singly linked list and returns the new haed.
+"""Variant: TYPO | Task 1"""
 
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -7,10 +7,10 @@ class ListNode:
 
 def reverse_linked_list(head: ListNode) -> ListNode:
     prev = None
-    curr = head
-    while curr:
-        nxt = curr.next
-        curr.next = prev
-        prev = curr
-        curr = nxt
+    current = head
+    while current:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node
     return prev

@@ -1,16 +1,18 @@
-# Prompt:
-# Implement a function in Python that, given a sorted list and a value to find, efficiently narrows down the search range to locate the value's index, or returns -1 if it isn't present.
+def efficient_search(sorted_list, value):
+    """
+    Implement a function in Python that, given a sorted list and a value to find, 
+    efficiently narrows down the search range to locate the value's index, 
+    or returns -1 if it isn't present.
+    """
+    left, right = 0, len(sorted_list) - 1
 
-# Python solution below
-
-def binary_search(array, target):
-    left, right = 0, len(array) - 1
     while left <= right:
-        middle = (left + right) // 2
-        if array[middle] == target:
-            return middle
-        if array[middle] < target:
-            left = middle + 1
+        mid = (left + right) // 2
+        if sorted_list[mid] == value:
+            return mid
+        elif sorted_list[mid] < value:
+            left = mid + 1
         else:
-            right = middle - 1
+            right = mid - 1
+
     return -1

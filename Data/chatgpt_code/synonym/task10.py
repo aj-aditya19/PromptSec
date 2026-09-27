@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python method that applies Dijkstra's approach to determine the minimum-cost route from a starting vertex to all other vertices in a weighted network.
-
 import heapq
 
 def dijkstra(graph, source):

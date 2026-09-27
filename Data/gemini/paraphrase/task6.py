@@ -1,4 +1,4 @@
-# Implement a function in Python that scans a string and returns how long the longest stretch of consecutive characters is, where no character appears more than once in that stretch.
+"""Variant: PARAPHRASE | Task 6"""
 
 def length_of_longest_substring(s: str) -> int:
     char_map = {}

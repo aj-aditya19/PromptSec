@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python fucntion that performs a bredth-first serch (BFS) traversl on a graph starting from a given noed.
-
 from collections import deque
 
 def bfs(graph, start):

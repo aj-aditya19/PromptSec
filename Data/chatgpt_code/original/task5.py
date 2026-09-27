@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python function that takes a list of intervals and merges all overlapping intervals, returning the merged list.
-
 def merge_intervals(intervals):
     if not intervals:
         return []

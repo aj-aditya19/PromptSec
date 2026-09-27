@@ -1,6 +1,3 @@
-# Prompt:
-# Create a function in Python where, given a set of start-end interval pairs, any pairs that overlap in range are combined into one, and the resulting non-overlapping set is returned.
-
 def merge_intervals(intervals):
     if not intervals:
         return []

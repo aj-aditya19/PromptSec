@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python function that implements Dijkstra's algorithm to find the shortest path from a source node to all other nodes in a weighted graph.
-
 import heapq
 
 def dijkstra(graph, source):

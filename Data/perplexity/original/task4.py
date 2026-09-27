@@ -1,16 +1,17 @@
-# Prompt:
-# Write a Python function that performs binary search on a sorted array to find the index of a target value, returning -1 if not found.
+def binary_search(nums, target):
+    """
+    Write a Python function that performs binary search on a sorted array to find 
+    the index of a target value, returning -1 if not found.
+    """
+    left, right = 0, len(nums) - 1
 
-# Python solution below
-
-def binary_search(array, target):
-    left, right = 0, len(array) - 1
     while left <= right:
-        middle = (left + right) // 2
-        if array[middle] == target:
-            return middle
-        if array[middle] < target:
-            left = middle + 1
+        mid = (left + right) // 2
+        if nums[mid] == target:
+            return mid
+        elif nums[mid] < target:
+            left = mid + 1
         else:
-            right = middle - 1
+            right = mid - 1
+
     return -1

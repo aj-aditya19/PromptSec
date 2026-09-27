@@ -1,8 +1,8 @@
-# Write a Python method that, given a list of integers and an integer k, returns the k most common values.
+"""Variant: SYNONYM | Task 8"""
 
-import heapq
+from typing import List
 from collections import Counter
 
-def top_k_frequent(nums: list[int], k: int) -> list[int]:
+def top_k_frequent(nums: List[int], k: int) -> List[int]:
     count = Counter(nums)
-    return [item for item, _ in count.most_common(k)]
+    return [item for item, freq in count.most_common(k)]

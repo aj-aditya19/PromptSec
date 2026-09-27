@@ -1,14 +1,17 @@
-# Write a Python function that takes a list of intervals and merges all overlapping intervals, returning the merged list.
+"""Variant: ORIGINAL | Task 5"""
 
-def merge_intervals(intervals: list[list[int]]) -> list[list[int]]:
+from typing import List
+
+def merge_intervals(intervals: List[List[int]]) -> List[List[int]]:
     if not intervals:
         return []
     intervals.sort(key=lambda x: x[0])
     merged = [intervals[0]]
     for current in intervals[1:]:
-        prev = merged[-1]
-        if current[0] <= prev[1]:
-            prev[1] = max(prev[1], current[1])
+        prev_start, prev_end = merged[-1]
+        curr_start, curr_end = current
+        if curr_start <= prev_end:
+            merged[-1][1] = max(prev_end, curr_end)
         else:
             merged.append(current)
     return merged

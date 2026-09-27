@@ -1,22 +1,19 @@
-# Write a Python method that applies Dijkstra's approach to determine the minimum-cost route from a starting vertex to all other vertices in a weighted network.
+"""Variant: SYNONYM | Task 10"""
 
 import heapq
+from typing import Dict, List, Tuple
 
-def dijkstra(graph: dict, start) -> dict:
+def dijkstra(graph: Dict[int, List[Tuple[int, int]]], start: int) -> Dict[int, float]:
     distances = {node: float('inf') for node in graph}
     distances[start] = 0
-    priority_queue = [(0, start)]
-
-    while priority_queue:
-        current_distance, current_node = heapq.heappop(priority_queue)
-
-        if current_distance > distances[current_node]:
+    pq = [(0, start)]
+    while pq:
+        curr_dist, curr_node = heapq.heappop(pq)
+        if curr_dist > distances[curr_node]:
             continue
-
-        for neighbor, weight in graph[current_node].items():
-            distance = current_distance + weight
-            if distance < distances[neighbor]:
+        for neighbor, weight in graph.get(curr_node, []):
+            distance = curr_dist + weight
+            if distance < distances.get(neighbor, float('inf')):
                 distances[neighbor] = distance
-                heapq.heappush(priority_queue, (distance, neighbor))
-
+                heapq.heappush(pq, (distance, neighbor))
     return distances

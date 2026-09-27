@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python method that conducts a level-order traversal (BFS) of a graph beginning at a specified vertex.
-
 from collections import deque
 
 def bfs(graph, start):

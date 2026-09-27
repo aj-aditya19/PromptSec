@@ -1,12 +1,13 @@
-# Write a Python method that, given a 2D matrix of '1's (ground) and '0's (sea), returns the count of separate landmasses.
+"""Variant: SYNONYM | Task 9"""
 
-def num_islands(grid: list[list[str]]) -> int:
+from typing import List
+
+def num_islands(grid: List[List[str]]) -> int:
     if not grid:
         return 0
-
     rows, cols = len(grid), len(grid[0])
-    count = 0
-
+    islands = 0
+    
     def dfs(r, c):
         if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] == '0':
             return
@@ -15,11 +16,10 @@ def num_islands(grid: list[list[str]]) -> int:
         dfs(r - 1, c)
         dfs(r, c + 1)
         dfs(r, c - 1)
-
+        
     for r in range(rows):
         for c in range(cols):
             if grid[r][c] == '1':
-                count += 1
+                islands += 1
                 dfs(r, c)
-
-    return count
+    return islands

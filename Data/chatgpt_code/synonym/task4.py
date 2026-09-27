@@ -1,6 +1,3 @@
-# Prompt:
-# Write a Python method that conducts a binary lookup on a sorted list to locate the position of a goal value, returning -1 if absent.
-
 def binary_search(nums, target):
     left, right = 0, len(nums) - 1
     while left <= right:

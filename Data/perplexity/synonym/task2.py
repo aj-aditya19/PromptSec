@@ -1,13 +1,14 @@
-# Prompt:
-# Given a list of integers nums and an integer goal, write a Python method that returns positions of the two numbers that sum to goal.
+def two_sum(nums, goal):
+    """
+    Given a list of integers nums and an integer goal, write a Python method 
+    that returns positions of the two numbers that sum to goal.
+    """
+    num_to_index = {}
 
-# Python solution below
+    for i, num in enumerate(nums):
+        complement = goal - num
+        if complement in num_to_index:
+            return [num_to_index[complement], i]
+        num_to_index[num] = i
 
-def two_sum(nums, target):
-    seen = {}
-    for index, value in enumerate(nums):
-        complement = target - value
-        if complement in seen:
-            return [seen[complement], index]
-        seen[value] = index
     return []

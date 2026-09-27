@@ -1,4 +1,4 @@
-# Create a function in Python that takes a string made up of brackets and determines if every opening bracket has a correctly ordered matching closing bracket.
+"""Variant: PARAPHRASE | Task 3"""
 
 def is_valid_parentheses(s: str) -> bool:
     stack = []

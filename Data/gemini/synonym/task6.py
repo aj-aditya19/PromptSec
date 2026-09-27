@@ -1,4 +1,4 @@
-# Write a Python method that determines the size of the longest substring containing no duplicate letters within a given string.
+"""Variant: SYNONYM | Task 6"""
 
 def length_of_longest_substring(s: str) -> int:
     char_map = {}

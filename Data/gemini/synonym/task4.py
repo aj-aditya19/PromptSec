@@ -1,12 +1,14 @@
-# Write a Python method that conducts a binary lookup on a sorted list to locate the position of a goal value, returning -1 if absent.
+"""Variant: SYNONYM | Task 4"""
 
-def binary_search(arr: list[int], target: int) -> int:
-    left, right = 0, len(arr) - 1
+from typing import List
+
+def binary_search(nums: List[int], target: int) -> int:
+    left, right = 0, len(nums) - 1
     while left <= right:
         mid = (left + right) // 2
-        if arr[mid] == target:
+        if nums[mid] == target:
             return mid
-        elif arr[mid] < target:
+        elif nums[mid] < target:
             left = mid + 1
         else:
             right = mid - 1

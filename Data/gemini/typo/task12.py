@@ -1,18 +1,17 @@
-# Write a Python fucntion that performs a bredth-first serch (BFS) traversl on a graph starting from a given noed.
+"""Variant: TYPO | Task 12"""
 
 from collections import deque
+from typing import Dict, List
 
-def bfs_traversal(graph: dict, start_node) -> list:
+def bfs_traversal(graph: Dict[int, List[int]], start_node: int) -> List[int]:
     visited = set([start_node])
     queue = deque([start_node])
-    traversal_order = []
-
+    order = []
     while queue:
-        node = queue.popleft()
-        traversal_order.append(node)
-        for neighbor in graph.get(node, []):
+        curr = queue.popleft()
+        order.append(curr)
+        for neighbor in graph.get(curr, []):
             if neighbor not in visited:
                 visited.add(neighbor)
                 queue.append(neighbor)
-
-    return traversal_order
+    return order

@@ -1,22 +1,27 @@
-# Prompt:
-# Write a Python method that, given a 2D matrix of '1's (ground) and '0's (sea), returns the count of separate landmasses.
-
-# Python solution below
-
-def number_of_islands(grid):
-    if not grid:
+def count_landmasses(matrix):
+    """
+    Write a Python method that, given a 2D matrix of '1's (ground) and '0's (sea), 
+    returns the count of separate landmasses.
+    """
+    if not matrix:
         return 0
-    rows, cols, count = len(grid), len(grid[0]), 0
-    for row in range(rows):
-        for col in range(cols):
-            if grid[row][col] == '1':
+
+    rows, cols = len(matrix), len(matrix[0])
+
+    def dfs(r, c):
+        if r < 0 or c < 0 or r >= rows or c >= cols or matrix[r][c] == '0':
+            return
+        matrix[r][c] = '0'
+        dfs(r + 1, c)
+        dfs(r - 1, c)
+        dfs(r, c + 1)
+        dfs(r, c - 1)
+
+    count = 0
+    for i in range(rows):
+        for j in range(cols):
+            if matrix[i][j] == '1':
+                dfs(i, j)
                 count += 1
-                stack = [(row, col)]
-                grid[row][col] = '0'
-                while stack:
-                    r, c = stack.pop()
-                    for nr, nc in ((r-1,c), (r+1,c), (r,c-1), (r,c+1)):
-                        if 0 <= nr < rows and 0 <= nc < cols and grid[nr][nc] == '1':
-                            grid[nr][nc] = '0'
-                            stack.append((nr, nc))
+
     return count

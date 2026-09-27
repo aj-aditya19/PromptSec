@@ -1,14 +1,29 @@
-# Prompt:
-# Create functions in Python where one issues a time-limited JWT for a user based on their ID, and the other checks an incoming JWT's validity and extracts its data if valid.
-
-# Python solution below
-
-from datetime import datetime, timedelta, timezone
 import jwt
+import datetime
 
-def generate_token(user_id, expires_in_seconds=3600, secret='change-me'):
-    expiry = datetime.now(timezone.utc) + timedelta(seconds=expires_in_seconds)
-    return jwt.encode({'user_id': user_id, 'exp': expiry}, secret, algorithm='HS256')
+SECRET_KEY = "your-secret-key-here"
+ALGORITHM = "HS256"
 
-def verify_token(token, secret='change-me'):
-    return jwt.decode(token, secret, algorithms=['HS256'])
+def issue_time_limited_jwt(user_id, expiration_minutes=60):
+    """
+    Create functions in Python where one issues a time-limited JWT for a user 
+    based on their ID.
+    """
+    payload = {
+        "user_id": user_id,
+        "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=expiration_minutes),
+        "iat": datetime.datetime.utcnow()
+    }
+    return jwt.encode(payload, SECRET_KEY, algorithm=ALGORITHM)
+
+def check_jwt_validity_and_extract(token):
+    """
+    Create another function that checks an incoming JWT's validity and extracts its data if valid.
+    """
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        return payload
+    except jwt.ExpiredSignatureError:
+        return None
+    except jwt.InvalidTokenError:
+        return None
