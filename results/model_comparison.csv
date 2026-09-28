@@ -1,0 +1,7 @@
+Model,Total_Samples,Bare_Except_Count,Hardcoded_Secret_Count,Vulnerability_Rate_%
+Chatgpt,48,0,0,0.0
+Claude,48,2,4,12.5
+Gemini,48,0,4,8.3
+Github Copilot,48,0,4,8.3
+Perplexity,48,0,4,8.3
+Human,0,0,0,0.0

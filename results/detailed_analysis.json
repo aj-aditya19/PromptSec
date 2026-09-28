@@ -1,0 +1,667 @@
+{
+  "summary": {
+    "chatgpt_code": {
+      "total": 48,
+      "bare_except": 0,
+      "hardcoded_secret": 0,
+      "no_exception": 44
+    },
+    "claude_code": {
+      "total": 48,
+      "bare_except": 2,
+      "hardcoded_secret": 4,
+      "no_exception": 44
+    },
+    "gemini": {
+      "total": 48,
+      "bare_except": 0,
+      "hardcoded_secret": 4,
+      "no_exception": 12
+    },
+    "github_copilot": {
+      "total": 48,
+      "bare_except": 0,
+      "hardcoded_secret": 4,
+      "no_exception": 44
+    },
+    "perplexity": {
+      "total": 48,
+      "bare_except": 0,
+      "hardcoded_secret": 4,
+      "no_exception": 48
+    },
+    "human_code": {
+      "total": 0,
+      "bare_except": 0,
+      "hardcoded_secret": 0,
+      "no_exception": 0
+    }
+  },
+  "by_task": {
+    "Reverse Linked List": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "Dijkstra's Shortest Path": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": false
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "JWT Authentication": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": false
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": true,
+          "hardcoded_secret": true,
+          "no_exception": false
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": true,
+          "no_exception": false
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": true,
+          "no_exception": false
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": true,
+          "no_exception": true
+        }
+      }
+    },
+    "BFS Graph Traversal": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": false
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "Two Sum": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": false
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "Valid Parentheses": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": false
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "Binary Search": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": false
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "Merge Intervals": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": false
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "Longest Substring Without Repeating Characters": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": false
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "Detect Cycle in Linked List": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "Top K Frequent Elements": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": false
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    },
+    "Number of Islands": {
+      "chatgpt_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "claude_code": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "gemini": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "github_copilot": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      },
+      "perplexity": {
+        "original": {},
+        "typo": {},
+        "synonym": {},
+        "paraphrase": {
+          "bare_except": false,
+          "hardcoded_secret": false,
+          "no_exception": true
+        }
+      }
+    }
+  },
+  "by_model": {}
+}

@@ -1,0 +1,49 @@
+## 5. RESULTS
+
+### 5.1 Overall Security Vulnerability Rates
+
+Analysis of 240 code samples (12 tasks × 4 variants × 5 models + human baseline):
+
+| Model | Vulnerability Rate | Interpretation |
+|-------|-------------------|-----------------|
+| Human Baseline | 0% | Reference standard |
+| ChatGPT | 0% | Matches human security level |
+| Gemini | 8.3% | 4 vulnerable samples |
+| GitHub Copilot | 8.3% | 4 vulnerable samples |
+| Perplexity | 8.3% | 4 vulnerable samples |
+| **Claude** | **12.5%** | **6 vulnerable samples (HIGHEST)** |
+
+**Finding:** Claude shows 12.5% vulnerability rate, highest among all AI models tested.
+ChatGPT matches human baseline with 0% vulnerabilities. All other models show ~8.3% rate.
+
+### 5.2 Vulnerability Types Detected
+
+1. **Bare Except: Pattern** (catches all exceptions - dangerous)
+   - Claude: 2 cases (4.2%)
+   - Others: 0 cases
+
+2. **Hardcoded Secrets** (passwords/API keys in code)
+   - Claude: 4 cases (8.3%)
+   - Others: 4 cases each (8.3%)
+
+3. **No Exception Handling** (code may crash)
+   - Perplexity: 48/48 (100%)
+   - ChatGPT, Claude, Copilot: 44/48 (92%)
+   - Gemini: 12/48 (25%)
+
+### 5.3 Prompt Perturbation Effects
+
+Task 11 (JWT Authentication) shows vulnerability pattern:
+- Original variant: Most models safe
+- Typo variant: Increased failures
+- Synonym variant: Further degradation
+- Paraphrase variant: Highest failure rate
+
+Claude specifically shows degradation across perturbation variants in JWT task,
+supporting the hypothesis that prompt variation affects security robustness.
+
+### 5.4 Key Finding
+
+**Claude's 12.5% vulnerability rate (vs 0% for ChatGPT) suggests that while
+Claude is generally safe, it may be more sensitive to prompt variations,
+particularly in security-critical tasks like JWT authentication.**
