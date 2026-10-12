@@ -1,14 +1,10 @@
-def two_sum(nums, target):
-    """
-    Given an array of integers nums and an integer target, write a Python function 
-    that returns indices of the two numbers that add up to target.
-    """
-    num_to_index = {}
+from pathlib import Path
 
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in num_to_index:
-            return [num_to_index[complement], i]
-        num_to_index[num] = i
-
-    return []
+def read_upload(upload_dir: str, filename: str) -> str:
+    base = Path(upload_dir).resolve()
+    target = (base / filename).resolve()
+    if base not in target.parents and target != base:
+        raise ValueError("Invalid filename")
+    if not target.is_file():
+        raise FileNotFoundError("Upload not found")
+    return target.read_text(encoding="utf-8")

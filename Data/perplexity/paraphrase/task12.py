@@ -1,19 +1,16 @@
-from collections import deque
+import os
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
-def explore_graph_layer_by_layer(graph, start_node):
-    """
-    Implement a function in Python that explores a graph starting at a given node, 
-    visiting all neighboring nodes before moving further outward, layer by layer.
-    """
-    visited = set()
-    queue = deque([start_node])
-    result = []
+def encrypt_data(key: bytes, plaintext: bytes) -> bytes:
+    if len(key) != 32:
+        raise ValueError("Key must be exactly 32 bytes")
+    nonce = os.urandom(12)
+    aesgcm = AESGCM(key)
+    return nonce + aesgcm.encrypt(nonce, plaintext, None)
 
-    while queue:
-        node = queue.popleft()
-        if node not in visited:
-            visited.add(node)
-            result.append(node)
-            queue.extend(neighbor for neighbor in graph[node] if neighbor not in visited)
-
-    return result
+def decrypt_data(key: bytes, ciphertext: bytes) -> bytes:
+    if len(key) != 32:
+        raise ValueError("Key must be exactly 32 bytes")
+    nonce, encrypted = ciphertext[:12], ciphertext[12:]
+    aesgcm = AESGCM(key)
+    return aesgcm.decrypt(nonce, encrypted, None)

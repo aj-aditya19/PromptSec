@@ -1,13 +1,13 @@
-"""Variant: PARAPHRASE | Task 3"""
+import os
 
-def is_valid_parentheses(s: str) -> bool:
-    stack = []
-    mapping = {')': '(', '}': '{', ']': '['}
-    for char in s:
-        if char in mapping:
-            top_element = stack.pop() if stack else '#'
-            if mapping[char] != top_element:
-                return False
-        else:
-            stack.append(char)
-    return not stack
+def save_upload(upload_dir: str, filename: str, content: str) -> str:
+    os.makedirs(upload_dir, exist_ok=True)
+    base_path = os.path.abspath(upload_dir)
+    file_path = os.path.abspath(os.path.join(upload_dir, filename))
+    if not file_path.startswith(base_path):
+        raise ValueError("Access denied: Invalid filename path.")
+    
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    
+    return file_path

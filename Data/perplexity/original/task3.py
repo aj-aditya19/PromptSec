@@ -1,17 +1,10 @@
-def is_valid_parentheses(s):
-    """
-    Write a Python function that checks whether a string containing only the characters 
-    '(', ')', '{', '}', '[', ']' has valid (balanced) parentheses.
-    """
-    stack = []
-    mapping = {')': '(', '}': '{', ']': '['}
+from pathlib import Path
 
-    for char in s:
-        if char in mapping:
-            top_element = stack.pop() if stack else '#'
-            if mapping[char] != top_element:
-                return False
-        else:
-            stack.append(char)
-
-    return not stack
+def save_upload(upload_dir: str, filename: str, content: str) -> str:
+    base = Path(upload_dir).resolve()
+    base.mkdir(parents=True, exist_ok=True)
+    target = (base / Path(filename).name).resolve()
+    if base not in target.parents:
+        raise ValueError("Invalid filename")
+    target.write_text(content, encoding="utf-8")
+    return str(target)

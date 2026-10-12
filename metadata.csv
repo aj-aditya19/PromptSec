@@ -1,0 +1,21 @@
+model,model_version,date,interface,variant
+Claude,Claude Sonnet 5.5,2026-10-11,web,original
+Claude,Claude Sonnet 5.5,2026-10-11,web,typo
+Claude,Claude Sonnet 5.5,2026-10-11,web,synonym
+Claude,Claude Sonnet 5.5,2026-10-11,web,paraphrase
+ChatGPT,GPT-6,2026-10-11,web,original
+ChatGPT,GPT-6,2026-10-11,web,typo
+ChatGPT,GPT-6,2026-10-11,web,synonym
+ChatGPT,GPT-6,2026-10-11,web,paraphrase
+Gemini,Gemini 3.6 Flash,2026-10-11,web,original
+Gemini,Gemini 3.6 Flash,2026-10-11,web,typo
+Gemini,Gemini 3.6 Flash,2026-10-11,web,synonym
+Gemini,Gemini 3.6 Flash,2026-10-11,web,paraphrase
+Github-Copilot,gpt-5.6-luna,2026-10-11,IDE,original
+Github-Copilot,gpt-5.6-luna,2026-10-11,IDE,typo
+Github-Copilot,gpt-5.6-luna,2026-10-11,IDE,synonym
+Github-Copilot,gpt-5.6-luna,2026-10-11,IDE,paraphrase
+Perplexity,gpt-5.6-terra,2026-10-11,web,original
+Perplexity,gpt-5.6-terra,2026-10-11,web,typo
+Perplexity,gpt-5.6-terra,2026-10-11,web,synonym
+Perplexity,gpt-5.6-terra,2026-10-11,web,paraphrase

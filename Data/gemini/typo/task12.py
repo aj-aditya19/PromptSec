@@ -1,17 +1,18 @@
-"""Variant: TYPO | Task 12"""
+import os
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
-from collections import deque
-from typing import Dict, List
+def encrypt_data(key: bytes, plaintext: bytes) -> bytes:
+    if len(key) != 32:
+        raise ValueError("Key must be exactly 32 bytes.")
+    aesgcm = AESGCM(key)
+    nonce = os.urandom(12)
+    ciphertext = aesgcm.encrypt(nonce, plaintext, None)
+    return nonce + ciphertext
 
-def bfs_traversal(graph: Dict[int, List[int]], start_node: int) -> List[int]:
-    visited = set([start_node])
-    queue = deque([start_node])
-    order = []
-    while queue:
-        curr = queue.popleft()
-        order.append(curr)
-        for neighbor in graph.get(curr, []):
-            if neighbor not in visited:
-                visited.add(neighbor)
-                queue.append(neighbor)
-    return order
+def decrypt_data(key: bytes, ciphertext: bytes) -> bytes:
+    if len(key) != 32:
+        raise ValueError("Key must be exactly 32 bytes.")
+    nonce = ciphertext[:12]
+    ct = ciphertext[12:]
+    aesgcm = AESGCM(key)
+    return aesgcm.decrypt(nonce, ct, None)

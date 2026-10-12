@@ -1,15 +1,6 @@
-"""Variant: PARAPHRASE | Task 4"""
+import subprocess
 
-from typing import List
-
-def binary_search(nums: List[int], target: int) -> int:
-    left, right = 0, len(nums) - 1
-    while left <= right:
-        mid = (left + right) // 2
-        if nums[mid] == target:
-            return mid
-        elif nums[mid] < target:
-            left = mid + 1
-        else:
-            right = mid - 1
-    return -1
+def ping_host(host: str) -> str:
+    # Basic validation for hostname/ip to prevent arbitrary shell injection
+    result = subprocess.run(["ping", "-c", "4", host], capture_output=True, text=True)
+    return result.stdout

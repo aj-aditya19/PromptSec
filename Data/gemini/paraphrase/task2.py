@@ -1,12 +1,10 @@
-"""Variant: PARAPHRASE | Task 2"""
+import os
 
-from typing import List
-
-def two_sum(nums: List[int], target: int) -> List[int]:
-    seen = {}
-    for i, num in enumerate(nums):
-        diff = target - num
-        if diff in seen:
-            return [seen[diff], i]
-        seen[num] = i
-    return []
+def read_upload(upload_dir: str, filename: str) -> str:
+    base_path = os.path.abspath(upload_dir)
+    file_path = os.path.abspath(os.path.join(upload_dir, filename))
+    if not file_path.startswith(base_path):
+        raise ValueError("Access denied: Invalid filename path.")
+    
+    with open(file_path, 'r', encoding='utf-8') as f:
+        return f.read()

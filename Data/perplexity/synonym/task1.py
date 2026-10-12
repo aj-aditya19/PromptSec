@@ -1,19 +1,13 @@
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+import sqlite3
 
-def invert_linked_list(head):
-    """
-    Write a Python method that inverts a singly linked list and outputs the new head.
-    """
-    prev = None
-    current = head
-
-    while current:
-        next_node = current.next
-        current.next = prev
-        prev = current
-        current = next_node
-
-    return prev
+def get_user(db_path: str, username: str) -> dict | None:
+    conn = sqlite3.connect(db_path)
+    try:
+        conn.row_factory = sqlite3.Row
+        row = conn.execute(
+            "SELECT id, username, email FROM users WHERE username = ?",
+            (username,),
+        ).fetchone()
+        return dict(row) if row else None
+    finally:
+        conn.close()

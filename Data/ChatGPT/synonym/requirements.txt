@@ -1,0 +1,5 @@
+PyJWT
+PyYAML
+requests
+cryptography
+psycopg2-binary

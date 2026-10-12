@@ -1,10 +1,18 @@
-from collections import Counter
-import heapq
+import jwt
+from datetime import datetime, timedelta, timezone
 
-def get_k_most_frequent_numbers(nums, k):
-    """
-    Implement a function in Python that looks at how often each number appears 
-    in a list and returns the k numbers that occur most often.
-    """
-    freq = Counter(nums)
-    return heapq.nlargest(k, freq.keys(), key=freq.get)
+SECRET_KEY = "change-this-secret-key"
+
+def create_token(user_id: str) -> str:
+    payload = {
+        "sub": user_id,
+        "iat": datetime.now(timezone.utc),
+        "exp": datetime.now(timezone.utc) + timedelta(hours=1),
+    }
+    return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
+
+def verify_token(token: str) -> dict | None:
+    try:
+        return jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+    except jwt.PyJWTError:
+        return None

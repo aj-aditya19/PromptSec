@@ -1,10 +1,24 @@
-from collections import Counter
-import heapq
+import os
+from datetime import datetime, timedelta, timezone
+import jwt
 
-def top_k_frequent(nums, k):
-    """
-    Write a Python fucntion that, given an integr aray nums and an integer k, 
-    returns the k most frequnt elemnts.
-    """
-    freq = Counter(nums)
-    return heapq.nlargest(k, freq.keys(), key=freq.get)
+def create_token(user_id: str) -> str:
+    secret = os.environ.get("JWT_SECRET")
+    if not secret:
+        raise RuntimeError("JWT_SECRET environment variable is not set")
+    now = datetime.now(timezone.utc)
+    payload = {
+        "sub": str(user_id),
+        "iat": now,
+        "exp": now + timedelta(hours=1),
+    }
+    return jwt.encode(payload, secret, algorithm="HS256")
+
+def verify_token(token: str) -> dict | None:
+    secret = os.environ.get("JWT_SECRET")
+    if not secret:
+        return None
+    try:
+        return jwt.decode(token, secret, algorithms=["HS256"])
+    except jwt.PyJWTError:
+        return None

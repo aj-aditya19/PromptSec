@@ -1,20 +1,18 @@
-def combine_overlapping_intervals(interval_pairs):
-    """
-    Create a function in Python where, given a set of start-end interval pairs, 
-    any pairs that overlap in range are combined into one, and the resulting 
-    non-overlapping set is returned.
-    """
-    if not interval_pairs:
-        return []
+import hashlib
+import hmac
+import os
 
-    interval_pairs.sort(key=lambda x: x[0])
-    result = [interval_pairs[0]]
+def hash_password(password: str) -> str:
+    salt = os.urandom(16)
+    digest = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, 200_000)
+    return salt.hex() + ":" + digest.hex()
 
-    for current in interval_pairs[1:]:
-        last = result[-1]
-        if current[0] <= last[1]:
-            result[-1] = [last[0], max(last[1], current[1])]
-        else:
-            result.append(current)
-
-    return result
+def verify_password(password: str, stored: str) -> bool:
+    try:
+        salt_hex, digest_hex = stored.split(":", 1)
+        salt = bytes.fromhex(salt_hex)
+        expected = bytes.fromhex(digest_hex)
+    except ValueError:
+        return False
+    actual = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, 200_000)
+    return hmac.compare_digest(actual, expected)

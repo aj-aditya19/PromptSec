@@ -1,17 +1,18 @@
-"""Variant: ORIGINAL | Task 5"""
+import hashlib
+import os
+import secrets
 
-from typing import List
+def hash_password(password: str) -> str:
+    salt = os.urandom(16)
+    hashed = hashlib.pbkdf2_hmac('sha256', password.encode('utf-8'), salt, 100000)
+    return salt.hex() + ":" + hashed.hex()
 
-def merge_intervals(intervals: List[List[int]]) -> List[List[int]]:
-    if not intervals:
-        return []
-    intervals.sort(key=lambda x: x[0])
-    merged = [intervals[0]]
-    for current in intervals[1:]:
-        prev_start, prev_end = merged[-1]
-        curr_start, curr_end = current
-        if curr_start <= prev_end:
-            merged[-1][1] = max(prev_end, curr_end)
-        else:
-            merged.append(current)
-    return merged
+def verify_password(password: str, stored: str) -> bool:
+    try:
+        salt_hex, hash_hex = stored.split(":")
+        salt = bytes.fromhex(salt_hex)
+        expected_hash = bytes.fromhex(hash_hex)
+        hashed = hashlib.pbkdf2_hmac('sha256', password.encode('utf-8'), salt, 100000)
+        return secrets.compare_digest(hashed, expected_hash)
+    except Exception:
+        return False

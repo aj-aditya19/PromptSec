@@ -1,19 +1,18 @@
-def merge_intervals(intervals):
-    """
-    Write a Python function that takes a list of intervals and merges all 
-    overlapping intervals, returning the merged list.
-    """
-    if not intervals:
-        return []
+import hashlib
+import hmac
+import os
 
-    intervals.sort(key=lambda x: x[0])
-    merged = [intervals[0]]
+def hash_password(password: str) -> str:
+    salt = os.urandom(16)
+    digest = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, 200_000)
+    return salt.hex() + ":" + digest.hex()
 
-    for current in intervals[1:]:
-        last = merged[-1]
-        if current[0] <= last[1]:
-            merged[-1] = [last[0], max(last[1], current[1])]
-        else:
-            merged.append(current)
-
-    return merged
+def verify_password(password: str, stored: str) -> bool:
+    try:
+        salt_hex, digest_hex = stored.split(":", 1)
+        salt = bytes.fromhex(salt_hex)
+        expected = bytes.fromhex(digest_hex)
+    except ValueError:
+        return False
+    actual = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, 200_000)
+    return hmac.compare_digest(actual, expected)

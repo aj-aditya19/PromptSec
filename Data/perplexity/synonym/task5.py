@@ -1,19 +1,18 @@
-def combine_ranges(ranges):
-    """
-    Write a Python method that accepts a collection of ranges and combines all 
-    intersecting ranges, returning the combined collection.
-    """
-    if not ranges:
-        return []
+import hashlib
+import hmac
+import os
 
-    ranges.sort(key=lambda x: x[0])
-    combined = [ranges[0]]
+def hash_password(password: str) -> str:
+    salt = os.urandom(16)
+    digest = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, 200_000)
+    return salt.hex() + ":" + digest.hex()
 
-    for current in ranges[1:]:
-        last = combined[-1]
-        if current[0] <= last[1]:
-            combined[-1] = [last[0], max(last[1], current[1])]
-        else:
-            combined.append(current)
-
-    return combined
+def verify_password(password: str, stored: str) -> bool:
+    try:
+        salt_hex, digest_hex = stored.split(":", 1)
+        salt = bytes.fromhex(salt_hex)
+        expected = bytes.fromhex(digest_hex)
+        actual = hashlib.pbkdf2_hmac("sha256", password.encode(), salt, 200_000)
+        return hmac.compare_digest(actual, expected)
+    except (ValueError, TypeError):
+        return False

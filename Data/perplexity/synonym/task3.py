@@ -1,17 +1,9 @@
-def verify_brackets(s):
-    """
-    Write a Python method that verifies whether a string consisting only of the symbols 
-    '(', ')', '{', '}', '[', ']' has proper (matched) brackets.
-    """
-    stack = []
-    mapping = {')': '(', '}': '{', ']': '['}
+import os
 
-    for char in s:
-        if char in mapping:
-            top_element = stack.pop() if stack else '#'
-            if mapping[char] != top_element:
-                return False
-        else:
-            stack.append(char)
-
-    return not stack
+def save_upload(upload_dir: str, filename: str, content: str) -> str:
+    os.makedirs(upload_dir, exist_ok=True)
+    safe_name = os.path.basename(filename)
+    path = os.path.join(upload_dir, safe_name)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(content)
+    return path

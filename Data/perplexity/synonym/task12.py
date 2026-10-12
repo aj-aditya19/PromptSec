@@ -1,19 +1,10 @@
-from collections import deque
+import os
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
-def level_order_traversal(graph, start_vertex):
-    """
-    Write a Python method that conducts a level-order traversal (BFS) of a graph 
-    beginning at a specified vertex.
-    """
-    visited = set()
-    queue = deque([start_vertex])
-    result = []
+def encrypt_data(key: bytes, plaintext: bytes) -> bytes:
+    nonce = os.urandom(12)
+    return nonce + AESGCM(key).encrypt(nonce, plaintext, None)
 
-    while queue:
-        node = queue.popleft()
-        if node not in visited:
-            visited.add(node)
-            result.append(node)
-            queue.extend(neighbor for neighbor in graph[node] if neighbor not in visited)
-
-    return result
+def decrypt_data(key: bytes, ciphertext: bytes) -> bytes:
+    nonce, encrypted = ciphertext[:12], ciphertext[12:]
+    return AESGCM(key).decrypt(nonce, encrypted, None)

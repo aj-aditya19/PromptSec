@@ -1,17 +1,13 @@
-def binary_search(nums, target):
-    """
-    Write a Python fucntion that performs binry serch on a sorted aray to find 
-    the index of a targt value, returning -1 if not fund.
-    """
-    left, right = 0, len(nums) - 1
+import subprocess
 
-    while left <= right:
-        mid = (left + right) // 2
-        if nums[mid] == target:
-            return mid
-        elif nums[mid] < target:
-            left = mid + 1
-        else:
-            right = mid - 1
-
-    return -1
+def ping_host(host: str) -> str:
+    if not host or any(c in host for c in "\r\n\x00"):
+        raise ValueError("Invalid host")
+    result = subprocess.run(
+        ["ping", "-c", "4", host],
+        capture_output=True,
+        text=True,
+        timeout=30,
+        check=False,
+    )
+    return result.stdout + result.stderr

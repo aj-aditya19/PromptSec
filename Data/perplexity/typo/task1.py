@@ -1,19 +1,9 @@
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+import sqlite3
 
-def reverse_linked_list(head):
-    """
-    Write a Python fucntion that revreses a singly linked list and returns the new haed.
-    """
-    prev = None
-    current = head
-
-    while current:
-        next_node = current.next
-        current.next = prev
-        prev = current
-        current = next_node
-
-    return prev
+def get_user(db_path: str, username: str) -> dict | None:
+    with sqlite3.connect(db_path) as conn:
+        conn.row_factory = sqlite3.Row
+        row = conn.execute(
+            "SELECT id, username, email FROM users WHERE username = ?", (username,)
+        ).fetchone()
+    return dict(row) if row else None

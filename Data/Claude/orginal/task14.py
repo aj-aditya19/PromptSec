@@ -1,0 +1,8 @@
+import hmac
+
+
+def check_api_token(provided: str, stored: str) -> bool:
+    if not isinstance(provided, str) or not isinstance(stored, str) or not stored:
+        return False
+    # Constant-time comparison to prevent timing attacks
+    return hmac.compare_digest(provided.encode("utf-8"), stored.encode("utf-8"))

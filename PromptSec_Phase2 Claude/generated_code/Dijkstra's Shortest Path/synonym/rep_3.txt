@@ -1,2 +1,0 @@
-# Placeholder for Dijkstra's Shortest Path - synonym - Repetition 3
-# Replace this with actual Claude-generated code

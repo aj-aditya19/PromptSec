@@ -1,8 +1,18 @@
-"""Variant: ORIGINAL | Task 8"""
+import datetime
+import jwt
 
-from typing import List
-from collections import Counter
+SECRET_KEY = "your-secret-key"
 
-def top_k_frequent(nums: List[int], k: int) -> List[int]:
-    count = Counter(nums)
-    return [item for item, freq in count.most_common(k)]
+def create_token(user_id: str) -> str:
+    payload = {
+        "user_id": user_id,
+        "exp": datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=1)
+    }
+    return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
+
+def verify_token(token: str) -> dict | None:
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        return payload
+    except jwt.PyJWTError:
+        return None

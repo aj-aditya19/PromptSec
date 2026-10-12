@@ -1,19 +1,16 @@
-from collections import deque
+import os
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
-def bfs_traversal(graph, start):
-    """
-    Write a Python function that performs a breadth-first search (BFS) 
-    traversal on a graph starting from a given node.
-    """
-    visited = set()
-    queue = deque([start])
-    result = []
+def encrypt_data(key: bytes, plaintext: bytes) -> bytes:
+    if len(key) != 32:
+        raise ValueError("Key must be exactly 32 bytes")
+    nonce = os.urandom(12)
+    return nonce + AESGCM(key).encrypt(nonce, plaintext, None)
 
-    while queue:
-        node = queue.popleft()
-        if node not in visited:
-            visited.add(node)
-            result.append(node)
-            queue.extend(neighbor for neighbor in graph[node] if neighbor not in visited)
-
-    return result
+def decrypt_data(key: bytes, ciphertext: bytes) -> bytes:
+    if len(key) != 32:
+        raise ValueError("Key must be exactly 32 bytes")
+    if len(ciphertext) < 13:
+        raise ValueError("Invalid ciphertext")
+    nonce, encrypted = ciphertext[:12], ciphertext[12:]
+    return AESGCM(key).decrypt(nonce, encrypted, None)

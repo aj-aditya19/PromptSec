@@ -1,20 +1,12 @@
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+import sqlite3
 
-def flip_linked_list(head):
-    """
-    Create a function in Python which takes the head of a singly linked list 
-    and returns its head after flipping the order of all the nodes.
-    """
-    prev = None
-    current = head
-
-    while current:
-        next_node = current.next
-        current.next = prev
-        prev = current
-        current = next_node
-
-    return prev
+def get_user(db_path: str, username: str) -> dict | None:
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        row = conn.execute(
+            "SELECT id, username, email FROM users WHERE username = ?", (username,)
+        ).fetchone()
+        return dict(row) if row else None
+    finally:
+        conn.close()

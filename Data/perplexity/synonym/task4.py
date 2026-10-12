@@ -1,17 +1,10 @@
-def binary_lookup(nums, goal):
-    """
-    Write a Python method that conducts a binary lookup on a sorted list to locate 
-    the position of a goal value, returning -1 if absent.
-    """
-    left, right = 0, len(nums) - 1
+import subprocess
 
-    while left <= right:
-        mid = (left + right) // 2
-        if nums[mid] == goal:
-            return mid
-        elif nums[mid] < goal:
-            left = mid + 1
-        else:
-            right = mid - 1
-
-    return -1
+def ping_host(host: str) -> str:
+    result = subprocess.run(
+        ["ping", "-c", "4", host],
+        capture_output=True,
+        text=True,
+        timeout=30,
+    )
+    return result.stdout + result.stderr

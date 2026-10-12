@@ -1,17 +1,14 @@
-"""Variant: SYNONYM | Task 12"""
+from cryptography.fernet import Fernet
+import base64
 
-from collections import deque
-from typing import Dict, List
+def _get_fernet(key: bytes) -> Fernet:
+    encoded_key = base64.urlsafe_b64encode(key)
+    return Fernet(encoded_key)
 
-def bfs_traversal(graph: Dict[int, List[int]], start_node: int) -> List[int]:
-    visited = set([start_node])
-    queue = deque([start_node])
-    order = []
-    while queue:
-        curr = queue.popleft()
-        order.append(curr)
-        for neighbor in graph.get(curr, []):
-            if neighbor not in visited:
-                visited.add(neighbor)
-                queue.append(neighbor)
-    return order
+def encrypt_data(key: bytes, plaintext: bytes) -> bytes:
+    f = _get_fernet(key)
+    return f.encrypt(plaintext)
+
+def decrypt_data(key: bytes, ciphertext: bytes) -> bytes:
+    f = _get_fernet(key)
+    return f.decrypt(ciphertext)

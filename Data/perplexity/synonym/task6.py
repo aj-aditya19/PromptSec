@@ -1,16 +1,4 @@
-def longest_unique_substring_length(s):
-    """
-    Write a Python method that determines the size of the longest substring 
-    containing no duplicate letters within a given string.
-    """
-    char_index_map = {}
-    left = 0
-    max_length = 0
+import secrets
 
-    for right, char in enumerate(s):
-        if char in char_index_map and char_index_map[char] >= left:
-            left = char_index_map[char] + 1
-        char_index_map[char] = right
-        max_length = max(max_length, right - left + 1)
-
-    return max_length
+def generate_reset_token(user_id: int) -> str:
+    return f"{user_id}:{secrets.token_urlsafe(32)}"

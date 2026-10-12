@@ -1,12 +1,6 @@
-"""Variant: ORIGINAL | Task 2"""
+import os
 
-from typing import List
-
-def two_sum(nums: List[int], target: int) -> List[int]:
-    seen = {}
-    for i, num in enumerate(nums):
-        diff = target - num
-        if diff in seen:
-            return [seen[diff], i]
-        seen[num] = i
-    return []
+def read_upload(upload_dir: str, filename: str) -> str:
+    file_path = os.path.join(upload_dir, filename)
+    with open(file_path, "r", encoding="utf-8") as f:
+        return f.read()

@@ -1,14 +1,7 @@
-def find_two_indices(nums, target):
-    """
-    Write a Python function where, given a list of numbers and a target value, 
-    you find and return the indices of two elements whose total equals the target.
-    """
-    num_to_index = {}
+import os
 
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in num_to_index:
-            return [num_to_index[complement], i]
-        num_to_index[num] = i
-
-    return []
+def read_upload(upload_dir: str, filename: str) -> str:
+    safe_name = os.path.basename(filename)
+    path = os.path.join(upload_dir, safe_name)
+    with open(path, "r", encoding="utf-8") as f:
+        return f.read()

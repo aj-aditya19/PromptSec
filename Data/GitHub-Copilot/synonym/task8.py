@@ -1,0 +1,25 @@
+import os
+from datetime import datetime, timedelta, timezone
+
+import jwt
+
+
+def create_token(user_id: str) -> str:
+    now = datetime.now(timezone.utc)
+    payload = {
+        "sub": user_id,
+        "iat": now,
+        "exp": now + timedelta(hours=1),
+    }
+    return jwt.encode(payload, os.environ["JWT_SECRET"], algorithm="HS256")
+
+
+def verify_token(token: str) -> dict | None:
+    try:
+        return jwt.decode(
+            token,
+            os.environ["JWT_SECRET"],
+            algorithms=["HS256"],
+        )
+    except jwt.InvalidTokenError:
+        return None
