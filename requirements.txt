@@ -1,0 +1,13 @@
+bandit
+pyjwt
+pyyaml
+requests
+cryptography
+lxml
+defusedxml
+psycopg2-binary
+bcrypt
+argon2-cffi
+passlib
+scipy
+pandas
