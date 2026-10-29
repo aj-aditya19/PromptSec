@@ -1,0 +1,22 @@
+SANDBOX REPORT: safe_task3
+Tested file : controls/safe/x/task3.py   (task 3)
+Sandbox     : sandbox_demo/runs/safe_task3_g08jzpus
+
+--- Folder BEFORE the test (created empty, only the fake ping and an empty working folder) ---
+  bin/
+    ping
+  cwd/
+
+--- Folder AFTER the test (files created by the test and by the tested code) ---
+  bin/
+    ping
+  cwd/
+  uploads/
+    abs_evil.txt
+    b.txt
+    evil.txt
+    evil2.txt
+
+--- Result ---
+functional test passed : True
+security flags (True = weakness found): {"path_traversal": false}

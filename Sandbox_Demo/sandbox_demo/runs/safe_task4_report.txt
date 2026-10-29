@@ -1,0 +1,17 @@
+SANDBOX REPORT: safe_task4
+Tested file : controls/safe/x/task4.py   (task 4)
+Sandbox     : sandbox_demo/runs/safe_task4_myrxca8n
+
+--- Folder BEFORE the test (created empty, only the fake ping and an empty working folder) ---
+  bin/
+    ping
+  cwd/
+
+--- Folder AFTER the test (files created by the test and by the tested code) ---
+  bin/
+    ping
+  cwd/
+
+--- Result ---
+functional test passed : True
+security flags (True = weakness found): {"command_injection": false}
